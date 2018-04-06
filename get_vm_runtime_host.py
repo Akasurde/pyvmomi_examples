@@ -40,5 +40,6 @@ def get_obj(content, vimtype, name=None):
 
 
 vm = get_obj(content, [vim.VirtualMachine], vm_name)
-print(vm.summary.runtime.host)
-
+host = vm.summary.runtime.host
+print(host)
+print(host.summary.config.name)
